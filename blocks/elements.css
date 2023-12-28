@@ -23,6 +23,9 @@
   height: 361px;
   border-radius: 10px;
   background: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .elements__cards-item-image {
