@@ -1,9 +1,9 @@
 .profile {
   width: 100%;
   max-width: 880px;
-  max-height: 120px;
   margin: 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: 169px 373px 24px 150px;
 }
 
 .profile__avatar {
@@ -21,8 +21,6 @@
   max-width: 415px;
   width: 100%;
   margin: auto 0;
-  display: grid;
-  grid-template-columns: 2;
 }
 
 .profile__name {
@@ -58,6 +56,9 @@
   border: 0;
   margin-top: 25px;
 }
+.profile__button:hover {
+  opacity: 0.6;
+}
 
 .profile__add {
   max-width: 150px;
@@ -70,4 +71,105 @@
   max-height: 50px;
   padding: 0;
   border: 0;
+}
+
+.profile__add-button:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1024px) {
+  .profile {
+    width: 580px;
+    grid-template-columns: 150px 200px 24px 150px;
+  }
+
+  .profile__info {
+    width: 230px;
+  }
+
+  .profile__avatar-image {
+    width: 120px;
+    padding: 0 13px;
+    margin: 0;
+  }
+  .profile__avatar {
+    width: 146px;
+  }
+  .profile__name {
+    width: 200px;
+  }
+  .profile__subtitle {
+    margin-left: 50px;
+    width: 200px;
+    margin-top: 9px;
+  }
+  .profile__add {
+    margin-left: 36px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .profile {
+    width: 282px;
+    height: 286px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .profile__avatar {
+    width: 100px;
+    height: 120px;
+    margin: 0 auto 26px;
+  }
+
+  .profile__avatar-image {
+    width: 120p;
+    padding: 0;
+  }
+
+  .profile__info {
+    margin: 0 auto;
+    width: 196px;
+  }
+  .profile__name {
+    width: 196px;
+    font-size: 22px;
+    grid-row: 3;
+  }
+  .profile__subtitle {
+    width: 196px;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+  }
+  .profile__button {
+    position: relative;
+    top: -74px;
+    left: 240px;
+    right: 15px;
+    bottom: 10px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .profile__button-image {
+    width: 18px;
+    height: 18px;
+  }
+
+  .profile__add {
+    margin: 0;
+  }
+
+  .profile__add-button {
+    width: 282px;
+    margin: 0;
+  }
+
+  .profile__add-button-image {
+    width: 282px;
+    height: 50px;
+    margin: 0 auto;
+  }
 }

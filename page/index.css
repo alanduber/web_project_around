@@ -4,15 +4,45 @@
 @import url(../blocks/profile.css);
 @import url(../blocks/elements.css);
 @import url(../blocks/footer.css);
+@import url(../blocks/main.css);
+@import url(../blocks/popup.css);
 
 @font-face {
   font-family: "Inter";
   src: url(../vendor/fonts/InterDisplay-Medium.woff2) format(woff2);
-  font-weight: bold;
+  font-weight: 500;
 }
 
-.body {
+@font-face {
+  font-family: "Inter";
+  src: url(../vendor/fonts/InterDisplay-Regular.woff2) format(woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../vendor/fonts/Inter-Black.woff2) format(woff2);
+  font-weight: 900;
+}
+
+html,
+body {
   background-color: #000;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  html,
+  body {
+    width: 580px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  html,
+  body {
+    width: 320px;
+  }
 }

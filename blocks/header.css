@@ -15,3 +15,30 @@
   border: 1px #545454 solid;
   margin: 41px auto 40px;
 }
+
+@media screen and (max-width: 1024px) {
+  .header {
+    width: 580px;
+    margin: 0;
+  }
+
+  .header__line {
+    width: 580px;
+    margin: 41px 0 40px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .header {
+    width: 320px;
+  }
+
+  .header__logo {
+    width: 126px;
+    margin: 28px 132px 32px 27px;
+  }
+  .header__line {
+    width: 320px;
+    margin: 0 auto 38px;
+  }
+}
