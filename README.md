@@ -2,7 +2,7 @@
 
 Bootcamp Web-Development - TripleTen
 
-- 🔗 <https://alanduber.github.io/web_project_around/" target="_blank">Check the project link here!</a>
+- 🔗 <https://alanduber.github.io/web_project_around/">Check the project link here!</a>
 
 
 ## 👨‍💻 Tools and Technologies used in the project development:
