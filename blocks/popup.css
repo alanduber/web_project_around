@@ -3,6 +3,7 @@
   height: 100%;
   display: none;
   position: fixed;
+  font-family: "Inter";
   justify-content: center;
   align-items: center;
   padding: 0 20px;
@@ -30,14 +31,17 @@
   position: absolute;
   top: -40px;
   right: -40px;
+  background-color: #000;
+  padding: 0;
 }
 
-.popup__btn-close:hover {
+.popup__button-close:hover {
   opacity: 0.6;
 }
 
 .popup__close-icon {
   width: 100%;
+  padding: 0;
 }
 
 .popup__title {
@@ -79,12 +83,25 @@
   color: #fff;
   font-size: 18px;
 }
-.popup__buttonn-submit:hover {
+.popup__button-submit:hover {
   opacity: 0.8;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .popup {
+    justify-content: unset;
+  }
 }
 
 @media screen and (max-width: 544px) {
-  .popup__btn-close {
+  .popup {
+    width: 282px;
+    height: 322px;
+    margin: 123px auto;
+  }
+
+  .popup__button-close {
     right: 0;
     top: -60px;
     width: 26px;
