@@ -30,6 +30,9 @@
   font-style: normal;
   font-weight: 500;
   line-height: 48px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   margin: 0 auto;
   max-width: 373px;
   width: 100%;
